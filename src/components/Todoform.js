@@ -1,20 +1,20 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 
 function Todoform() {
-    const
-  return ([input, setInput] =useState('')
+    const [input, setInput] =useState('');
+    return (
 
-    <form className="todo-form">
+    <form className='todo-form'>
         <input type="text" 
-        placeholder="Add a todo" 
+        placeholder='Add a todo 
         value={input}
         name="text" 
-        className='todo-input'/>
-        </input>
+        className='todo-input'
+        />
         <button className='todo-button'>Add todo</button>
          
     </form>
-  )
+  );
 }
 
 export default Todoform
