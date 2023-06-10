@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; //'react' module
+import React, { useState } from 'react'; // Imports the React library and the useState hook from the 'react' module
 import TodoForm from './TodoForm';// Imports the TodoForm component from the TodoForm file
 import { RiCloseCircleLine } from 'react-icons/ri'; // Import the close/delete icon from the React Icons Library
 import { TiEdit } from 'react-icons/ti'; // Import the Eddit/Modify Icon from the React Icon Library
@@ -12,7 +12,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
   //Todo function that contains the todos,completeTodo,removeTodo and updateTodo parameters
   //Willl show the list of todos and enable deletion,addition or editing
   const [edit, setEdit] = useState(initialState);
-  // use of'useState' to initialize the edit state variable with that found in the initial state variable and setEdit function to update the edit variable.
+  // use of'useState' to initialize the edit state variable with that found in the initial state variable and setEdit function to update the edit variable
  const myState = useState(initialState);
  //use of useState to initialize the myState variable with the initial state value and 
  console.log(myState);
@@ -42,10 +42,10 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       {todos.map((todo, index) => (
         //Assigns each todo item to the todo variable and the index to the index variable
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-                  /* This div represents a todo item in the list.
+                  {/* This div represents a todo item in the list.
     If the todo is complete, it will have the class name 'todo-row complete',
     otherwise, it will have the class name 'todo-row'.
-    The 'key' prop helps React keep track of each todo item efficiently. */
+      The 'key' prop helps React keep track of each todo item efficiently. */}
           <div key={todo.id} onClick={() => completeTodo(todo.id)}>
              //Triggers the 'completeTodo' function with the 'todo.id' as an argument
             {todo.text}

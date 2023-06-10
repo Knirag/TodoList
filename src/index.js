@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from 'react'; // Imports the React library
+import ReactDOM from 'react-dom/client'; // Imports the ReactDOM library
+import App from './App'; // Imports the App component from App file
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Create a root element using the ReactDOM library and the 'root' DOM element
 root.render(
+  // Render the App component within a strict mode wrapper
   <React.StrictMode>
     <App />
   </React.StrictMode>
