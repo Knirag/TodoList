@@ -42,7 +42,12 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       {todos.map((todo, index) => (
         //Assigns each todo item to the todo variable and the index to the index variable
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
+                  /* This div represents a todo item in the list.
+    If the todo is complete, it will have the class name 'todo-row complete',
+    otherwise, it will have the class name 'todo-row'.
+    The 'key' prop helps React keep track of each todo item efficiently. */
           <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+             //Triggers the 'completeTodo' function with the 'todo.id' as an argument
             {todo.text}
           </div>
           <div className="icons">
@@ -64,4 +69,4 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
   );
 }
 
-export default Todo;
+export default Todo; /* Exports the Todo component as the default export of this module, making it available for other parts of the application to import and use. */
