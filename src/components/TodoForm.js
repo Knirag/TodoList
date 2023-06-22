@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 /* Importing  functions and hooks from the 'react' library.
 useState:manage state variables
-useEffect: manage tasks when conditions are fullfilled
+useEffect: 
 useRef: store and access variables easier 
 */
 function TodoForm(props) { // TodoForm function declration that recieves props as its parameter
